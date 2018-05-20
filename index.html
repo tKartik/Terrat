@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+
+    <title>Terrat</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/ihover.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.css"  media="screen,projection"/>
+
+    <style>
+      body {padding: 0; margin: 0;
+        font-family:'Roboto', sans-serif;;
+          background-color: #dcdcdc;
+          background: url(blo.png);
+          background-repeat: no-repeat;
+          background-size: 100% 600px;}
+
+
+    </style>
+
+
+    <script language="javascript" type="text/javascript" src="/libraries/p5.min.js"></script>
+    <script language="javascript" src="libraries/p5.dom.min.js"></script>
+    <script language="javascript" src="libraries/p5.sound.min.js"></script>
+    <script language="javascript" type="text/javascript"src="sketch.js"></script>
+
+  </head>
+  <body>
+
+      <table id="yrs">
+          <th>94</th>
+          <th>95</th>
+          <th>96</th>
+          <th>97</th>
+          <th>98</th>
+          <th>99</th>
+          <th>00</th>
+          <th>01</th>
+          <th>02</th>
+          <th>03</th>
+          <th>04</th>
+          <th>05</th>
+          <th>06</th>
+          <th>07</th>
+          <th>08</th>
+          <th>09</th>
+          <th>10</th>
+          <th>11</th>
+          <th>12</th>
+        </table >
+          <br>
+
+
+
+    <div class="row">
+          <div class="col s6 push-s1 ">
+              <br><br><br><br>
+                <h1 style="color:white; font-family:'Noto Serif', sans-serif; font-size:60px; text-shadow:1px; font-weight: bold; position: relative; left:-20px;">TERRAT</h1>
+                <p style="color:white; font-family:'Roboto', sans-serif; font-size:20px; text-shadow:1px; position: relative; left:-10px; top: -10px;">Terrat is a data visualization project on
+                  terrorist attacks in <br />India.Most terrorist attacks in India
+                  have relatively low<br /> casualtyrates,
+                   a consequence of the fact that they are <br />usually carried out by groups that are seeking political<br />
+                    recognition rather than large numbers of deaths.</p>
+                </p>
+          </div>
+          <div class="col s1 push-s5">
+
+            <table id="val">
+            <tr><th>500</th></tr>
+            <tr><th>1000</th></tr>
+            <tr><th>1500</th></tr>
+            <tr><th>2000</th></tr>
+            <tr><th>2500</th></tr>
+            </table>
+          </div>
+    </div>
+
+      <div class="row">
+          <div class="col s3 push-s8">
+              <p style=" color:#494949; font-family:'Roboto', sans-serif; position:relative; top:-80px;"> &uarr; This graph represent
+                s the deaths caused in Terrorist Attaks with year on X-Axis and No. of people of Y-Axis</p>
+
+            </div>
+      </div>
+
+
+
+      <br><br><br><br><br><br>
+
+      <div class="container"><hr></div>
+      <br><br>
+        <br><br><br><br><br><br>
+      <div class="center">
+      <h>LOCATION OF ATTACKS - INTERACTIVE MAP*</h>
+      </div>
+
+      <br>
+
+    <div id="parent" class="row">
+      <div class="col s8 push-s2 center">
+        <button id="1979" value="1979" class="dropbtn">1979</button>|
+        <button id="1980" value="1980" class="dropbtn">1980</button>|
+        <button id="1981" value="1981" class="dropbtn">1981</button>|
+        <button id="1982" value="1982" class="dropbtn">1982</button>|
+        <button id="1983" value="1983" class="dropbtn">1983</button>|
+        <button id="1984" value="1984" class="dropbtn">1984</button>|
+        <button id="1985" value="1985" class="dropbtn">1985</button>|
+        <button id="1986" value="1986" class="dropbtn">1986</button>|
+        <button id="1987" value="1987" class="dropbtn">1987</button>|
+        <button id="1989" value="1989" class="dropbtn">1989</button>|
+        <button id="1990" value="1990" class="dropbtn">1990</button>|
+        <button id="1988" value="1988" class="dropbtn">1988</button>|
+        <button id="1991" value="1991" class="dropbtn">1991</button>|
+        <button id="1992" value="1992" class="dropbtn">1992</button>|
+        <button id="1994" value="1994" class="dropbtn">1994</button>|
+        <button id="1995" value="1995" class="dropbtn">1995</button>|
+        <button id="1996" value="1996" class="dropbtn">1996</button>|
+        <button id="1997" value="1997" class="dropbtn">1997</button>|
+        <button id="1999" value="1999" class="dropbtn">1999</button>|
+        <button id="1998" value="1998" class="dropbtn">1998</button>|
+        <button id="2001" value="2001" class="dropbtn">2001</button>|
+        <button id="2000" value="2000" class="dropbtn">2000</button>|
+        <button id="2003" value="2003" class="dropbtn">2003</button>|
+        <button id="2002" value="2002" class="dropbtn">2002</button>|
+        <button id="2004" value="2004" class="dropbtn">2004</button>|
+        <button id="2005" value="2005" class="dropbtn">2005</button>|
+        <button id="2006" value="2006" class="dropbtn">2006</button>|
+        <button id="2007" value="2007" class="dropbtn">2007</button>|
+        <button id="2008" value="2008" class="dropbtn">2008</button>|
+        <button id="2009" value="2009" class="dropbtn">2009</button>|
+        <button id="2010" value="2010" class="dropbtn">2010</button>|
+        <button id="2011" value="2011" class="dropbtn">2011</button>|
+        <button id="2013" value="2012" class="dropbtn">2012</button>|
+        <button id="2012" value="2013" class="dropbtn">2013</button>|
+        <button id="2014" value="2014" class="dropbtn">2014</button>|
+        <button id="2015" value="2015" class="dropbtn">2015</button>|
+        <button id="2016" value="2016" class="dropbtn">2016</button>|
+      </div>
+    </div>
+
+
+    <div id="parent" class="row">
+      <div class="col s12 center">
+        <div id="sketch-holder">
+
+        </div><br>
+        <div class="col s4 push-s7">
+          <div id="s1" > </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="center">
+    <h>STATISTICS</h>
+  </div>
+
+  <div class="row">
+    <div class="col s4 push-s1"><img src="c33.svg" width="100%"><br>
+      <div class="center hp">
+        <p>Total Attacks**</p>
+      </div></div>
+    <div class="col s4"><img src="c22.svg" width="100%"><br><div class="center hp">
+      <p >Total Deaths**</p>
+    </div></div>
+    <div class="col s4 pull-s1"><img src="c11.svg" width="100%"><br>
+      <div class=" hp">
+        <p>Total Injuries**</p>
+      </div></div>
+
+  </div>
+
+    <br><br>
+
+  <div class="row">
+    <div class="col s10 push-s1"><img src="gun.svg" width="100%" opacit="0.7"></div>
+  </div>
+
+  <div class="row center"><div class="col s10 push-s1">
+    <div class="he">
+    <p>BREAKDOWN OF ATTACKS BASED ON TYPE OF TARGET*</p>
+   </div></div></div>
+
+    <br><br><br><br><br>
+
+   <div class="row">
+     <div class="col s10 push-s1"><img src="cal.svg" width="100%" opacit="0.7"></div>
+   </div>
+
+   <div class="row center"><div class="col s10 push-s1">
+     <div class="he">
+     <p>BREAKDOWN OF ATTACKS BASED ON MONTHS*</p>
+   </div></div></div>
+
+    <br><br><br><br>
+
+  <div class="container"><hr></div>
+
+
+  <div class="row">
+      <div class="col s3 push-s1"><p style="font-size:15px">
+        *Data not available from 1973 <br />
+        **Data available from 1979-2015
+      </p>
+  </div>
+
+  <div class="col s2 push-s2">
+    <div class="row center"><p>
+    About <br />
+    &copy; Kartik Tyagi <br />
+    tyagik2097@gmail.com <br />
+    <a href="https://www.facebook.com/profile.php?id=100012190008591"><img src="fb.png" width="30px"/></a>
+	  <a href="https://plus.google.com/u/0/104977145814906992177"><img src="in.png" width="30px"/></a>
+  </p></div>
+  </div>
+
+  <div class="col s2 push-s4"><p style="font-size:15px">
+    Data Source - https://www.kaggle.com/START-UMD/gtd
+  </p>
+</div>
+
+
+</div>
+
+
+
+  </body>
+</html>
