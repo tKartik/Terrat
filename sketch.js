@@ -131,9 +131,8 @@ function draw() {
   text("Attacks with no fatalities", 132, 180);
   text("Attacks with fatalities", 132, 210);
   text("                 INTERACTIVITY", 110, 260);
-  text("A - Press A to toggle map on/off", 110, 290);
-  text("Use the sliders below to change the ", 110, 310);
-  text("year and radius of location", 110, 330);
+  text("A - Press A to toggle map on/off", 110, 310);
+  text("Hover over the location to get more info",110,290);
   textSize(14);
   text("total number of attacks " + n, 110, -290);
   textSize(25);
