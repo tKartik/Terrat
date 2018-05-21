@@ -134,9 +134,9 @@ function draw() {
   text("A - Press A to toggle map on/off", 110, 310);
   text("Hover over the location to get more info",110,290);
   textSize(14);
-  text("total number of attacks " + n, 110, -290);
+  text("total number of attacks " + n, 110, -230);
   textSize(25);
-  text(year,140,-260);
+  text("Year" + year,140,-250);
 
 
 
